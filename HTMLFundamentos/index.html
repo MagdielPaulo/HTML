@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagem dos sonhos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viagem dos sonhos</title>
+
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
 		<nav>
@@ -13,20 +17,30 @@
 				<li><a href="#dicas">Taxa</a></li>
 				<li><a href="#contato">Contato</a></li>
 			</ul>
-		<h1>Bem-vindo ao meu site de viagens!</h1>
+			<h1>Bem-vindo ao meu site de viagens!</h1>
 	</header>
 	<section>
 		<h2>Conheça os destinos mais incríveis do mundo!</h2>
 		<p>
 			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
-			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas. 
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
 			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
-		</p>
-		<figure >
+		</p><br><br>
+		<p>
+			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
+			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
+		</p><br><br>
+		<p>
+			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
+			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
+		</p><br><br>
+		<figure>
 			<img src="/HTMLFundamentos/Imagens/Capa.jpg" width="300px" alt="Imagem de anime teste"><br>
 			<figurecaption>Imagem de anime teste</figurecaption>
 		</figure>
-		<figure> 
+		<figure>
 			<img src="/HTMLFundamentos/Imagens/cell.jpg" width="300px" alt="Imagem de anime cell"><br>
 			<figurecaption>Imagem de anime cell</figurecaption>
 		</figure>
@@ -42,6 +56,9 @@
 	<section>
 		<h2 id="contato">Orçamento</h2>
 		<form action="GET" method="">
+			
+			<fieldset>
+				<legend>Dados do cliente</legend>
 			<label>Nome</label><br>
 			<input type="text" name="nome"><br><br>
 
@@ -56,16 +73,53 @@
 
 			<label>Quantidade de pessoas</label><br>
 			<input type="number" name="quantidade_pessoas"><br><br>
+			
+			</fieldset>
 
-			<label>Senha</label><br>
-			<input type="password" name="senha"><br><br>
+			,<fieldset>
+				<legend>Quais serviços deseja?</legend>
+				<label>
+					<input type="checkbox" name="passagens" value="Passagens"> Compra Passagens<br>
+				</label>
+				<label>
+					<input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de Hospedagem<br>
+				</label>
+				<label>
+					<input type="checkbox" name="veiculo" value="Veiculo"> Reserva de Veículo<br><br>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Forma de pagamento</legend>
+				<label>
+					<input type="radio" name="pagamento" value="Cartão de crédito"> Cartão de crédito<br>
+				</label>
+				<label>
+					<input type="radio" name="pagamento" value="Boleto bancário"> Boleto bancário<br>
+				</label>
+				<label>
+					<input type="radio" name="pagamento" value="Pix"> Pix<br><br>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Escolha o prazo de pagamento</legend>
+				<select name="prazo_pagamento">
+					<option value="A vista">À vista</option>
+					<option value="1x">1x</option>
+					<option value="2x">2x</option>
+					<option value="3x">3x</option>
+					<option value="4x">4x</option>
+					<option value="5x">5x</option>
+				</select>
+			</fieldset><br><br>
 
 			<label>Comentario</label><br><br>
 			<textarea name="comentario" rows="5" cols="30"></textarea><br><br>
 
 			<button>Salvar</button>
-			
-	</section>	
+
+	</section>
 	<br><br>
 	<section>
 		<h2 id="destinos">Pacotes de viagem</h2>
@@ -86,9 +140,10 @@
 				<td>R$ 8.000</td>
 				<td>10 dias</td>
 		</table>
-	</section>	
-    <footer>
+	</section>
+	<footer>
 		<p>&copy; 2024 Viagem dos Sonhos. Todos os direitos reservados.</p>
 	</footer>
 </body>
+
 </html>
