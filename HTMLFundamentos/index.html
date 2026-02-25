@@ -13,67 +13,60 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#destinos">Pacotes</a></li>
-				<li><a href="#dicas">Taxa</a></li>
-				<li><a href="#contato">Contato</a></li>
+				<li><a href="#">Pacotes</a></li>
+				<li><a href="#">Taxa</a></li>
+				<li><a href="#">Contato</a></li>
 			</ul>
-			<h1>Bem-vindo ao meu site de viagens!</h1>
+		</nav>
+		<h1>Bem-vindo ao meu site de viagens!</h1>
 	</header>
-	<section>
-		<h2>Conheça os destinos mais incríveis do mundo!</h2>
-		<p>
-			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+	<section id="pacotes">
+		<h2>Conheça nossos Pacotes</h2>
+		<p> Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
+			Prepare-se para se inspirar e planejar a viagem dos seus sonhos! Se você é apaixonado por viagens, este é o
+			lugar certo para você! Aqui, vamos
 			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
 			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
-		</p><br><br>
-		<p>
-			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
-			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
-			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
-		</p><br><br>
-		<p>
-			Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
-			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
-			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
-		</p><br><br>
-		<figure>
-			<img src="/HTMLFundamentos/Imagens/Capa.jpg" width="300px" alt="Imagem de anime teste"><br>
-			<figurecaption>Imagem de anime teste</figurecaption>
-		</figure>
-		<figure>
-			<img src="/HTMLFundamentos/Imagens/cell.jpg" width="300px" alt="Imagem de anime cell"><br>
-			<figurecaption>Imagem de anime cell</figurecaption>
-		</figure>
-		<figure>
-			<img src="/HTMLFundamentos/Imagens/note.jpg" width="300px" alt="Imagem de note"><Br><br>
-			<figurecaption>Imagem de note</figurecaption>
-		</figure>
+			<br><br>
+			<hr>
+		</p>
+		<div class="figuras">
+			<figure>
+				<img src="Imagens/Capa.jpg" width="300px" alt="Imagem de anime teste"><br>
+				<figurecaption>Imagem de anime teste</figurecaption>
+			</figure>
+			<figure>
+				<img src="Imagens/cell.jpg" width="300px" alt="Imagem de anime cell"><br>
+				<figurecaption>Imagem de anime cell</figurecaption>
+			</figure>
+			<figure>
+				<img src="Imagens/note.jpg" width="300px" alt="Imagem de note"><Br><br>
+				<figurecaption>Imagem de note</figurecaption>
+			</figure>
+		</div>
 	</section>
-	<video controls width="300px">
-		<source src="" type="video/mp4">
-		Seu navegador não suporta a tag de vídeo. <a href="">Baixe o vídeo aqui</a>.
-	</video>
 	<section>
 		<h2 id="contato">Orçamento</h2>
 		<form action="GET" method="">
-			
+
 			<fieldset>
 				<legend>Dados do cliente</legend>
-			<label>Nome</label><br>
-			<input type="text" name="nome"><br><br>
+				<label>Nome</label><br>
+				<input type="text" name="nome"><br><br>
 
-			<label>Email</label><br>
-			<input type="email" required name="email"><br><br>
+				<label>Email</label><br>
+				<input type="email" required name="email"><br><br>
 
-			<label>Data de ida</label><br>
-			<input type="date" name="data_ida"><br><br>
+				<label>Data de ida</label><br>
+				<input type="date" name="data_ida"><br><br>
 
-			<label>Data de volta</label><br>
-			<input type="date" name="data_volta"><br><br>
+				<label>Data de volta</label><br>
+				<input type="date" name="data_volta"><br><br>
 
-			<label>Quantidade de pessoas</label><br>
-			<input type="number" name="quantidade_pessoas"><br><br>
-			
+				<label>Quantidade de pessoas</label><br>
+				<input type="number" name="quantidade_pessoas"><br><br>
+
 			</fieldset>
 
 			,<fieldset>
@@ -123,22 +116,26 @@
 	<br><br>
 	<section>
 		<h2 id="destinos">Pacotes de viagem</h2>
-		<table border>
+		<table>
 			<caption>Pacotes de viagem disponíveis</caption>
-			<tr>
+			<thead>
 				<th>Destino</th>
 				<th>Preço</th>
 				<th>Duração</th>
-			</tr>
-			<tr>
-				<td>Paris</td>
-				<td>R$ 5.000</td>
-				<td>7 dias</td>
-			</tr>
-			<tr>
-				<td>Maldivas</td>
-				<td>R$ 8.000</td>
-				<td>10 dias</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Rio de Janeiro</td>
+					<td>R$ 2.000</td>
+					<td>5 dias</td>
+				</tr>
+				<tr>
+					<td>Nova York</td>
+					<td>R$ 4.000</td>
+					<td>7 dias</td>
+				</tr>
+			</tbody>
 		</table>
 	</section>
 	<footer>
