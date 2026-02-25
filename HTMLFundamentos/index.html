@@ -12,40 +12,91 @@
 
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Pacotes</a></li>
-				<li><a href="#">Taxa</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-lg bg-warning">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Pacotes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Taxas</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Contato
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
-		<h1>Bem-vindo ao meu site de viagens!</h1>
+		<h1>Venha realizar a viagem do seus sonhos!</h1>
+		<P>Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
+			Prepare-se para se inspirar e planejar a viagem.</P>
 	</header>
 	<section id="pacotes">
 		<h2>Conheça nossos Pacotes</h2>
 		<p> Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
 			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
 			Prepare-se para se inspirar e planejar a viagem dos seus sonhos! Se você é apaixonado por viagens, este é o
-			lugar certo para você! Aqui, vamos
-			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
-			Prepare-se para se inspirar e planejar a viagem dos seus sonhos!
-			<br><br>
-			<hr>
-		</p>
-		<div class="figuras">
-			<figure>
-				<img src="Imagens/Capa.jpg" width="300px" alt="Imagem de anime teste"><br>
-				<figurecaption>Imagem de anime teste</figurecaption>
+			lugar certo para você! Aqui, vamos explorar os destinos mais incríveis do mundo, desde praias paradisíacas
+			até cidades históricas.
+			Prepare-se para se inspirar e planejar a viagem dos seus sonhos,</p>
+		<div class="row text-center">
+			<figure class="col text-center"">
+				<img src=" Imagens/Capa.jpg" width="300px" alt="Imagem 1"><br>
+				<figurecaption>Viagem1</figurecaption>
 			</figure>
-			<figure>
-				<img src="Imagens/cell.jpg" width="300px" alt="Imagem de anime cell"><br>
-				<figurecaption>Imagem de anime cell</figurecaption>
+			<figure class="col text-center">
+				<img src="Imagens/cell.jpg" width="300px" alt="Imagem 2"><br>
+				<figurecaption>Viagem 2</figurecaption>
 			</figure>
-			<figure>
-				<img src="Imagens/note.jpg" width="300px" alt="Imagem de note"><Br><br>
-				<figurecaption>Imagem de note</figurecaption>
+			<figure class="col text-center">
+				<img src="Imagens/note.jpg" width="300px" alt="Imagem 3"><Br><br>
+				<figurecaption>Viagem 3</figurecaption>
 			</figure>
 		</div>
+	</section>
+	<section>
+		<h2 id="destinos">Pacotes de viagem</h2>
+		<table>
+			<caption>Pacotes de viagem disponíveis</caption>
+			<thead>
+				<th>Destino</th>
+				<th>Preço</th>
+				<th>Duração</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Rio de Janeiro</td>
+					<td>R$ 2.000</td>
+					<td>5 dias</td>
+				</tr>
+				<tr>
+					<td>Nova York</td>
+					<td>R$ 4.000</td>
+					<td>7 dias</td>
+				</tr>
+			</tbody>
+		</table>
 	</section>
 	<section>
 		<h2 id="contato">Orçamento</h2>
@@ -115,30 +166,6 @@
 
 	</section>
 	<br><br>
-	<section>
-		<h2 id="destinos">Pacotes de viagem</h2>
-		<table>
-			<caption>Pacotes de viagem disponíveis</caption>
-			<thead>
-				<th>Destino</th>
-				<th>Preço</th>
-				<th>Duração</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Rio de Janeiro</td>
-					<td>R$ 2.000</td>
-					<td>5 dias</td>
-				</tr>
-				<tr>
-					<td>Nova York</td>
-					<td>R$ 4.000</td>
-					<td>7 dias</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
 	<footer>
 		<p>&copy; 2024 Viagem dos Sonhos. Todos os direitos reservados.</p>
 	</footer>
