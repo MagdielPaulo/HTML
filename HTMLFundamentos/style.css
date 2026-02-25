@@ -13,7 +13,8 @@ header {
 
 }
 
-section, footer {
+section,
+footer {
     padding: 40px;
 }
 
@@ -32,11 +33,11 @@ h2 {
     font-weight: 600;
 }
 
-nav li a{
+nav li a {
     padding: 10px;
     color: white;
     text-decoration: none;
-}         
+}
 
 nav li {
     float: left;
@@ -59,7 +60,7 @@ table {
     width: 100%;
 }
 
-table td{
+table td {
     color: #303030;
 }
 
@@ -71,16 +72,16 @@ table tr:nth-child(odd) {
     background-color: #bdbdbdbd;
 }
 
-table thead th{
+table thead th {
     background-color: #f4511e;
     color: white;
 }
 
-#pacotes .figuras figure{
+#pacotes .figuras figure {
     display: inline-block;
 }
 
-#pacotes .figuras{
+#pacotes .figuras {
     text-align: center;
 }
 
