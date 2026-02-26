@@ -1,21 +1,6 @@
-body {
-    font-weight: 400;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 2.2em;
-    color: #818181;
-    margin: 0;
-
-}
-
-header {
-    background-color: #f4511e;
-
-}
-
-section,
-footer {
-    padding: 40px;
+header p{
+    color: #ffffff;
+    font-weight: 600;
 }
 
 h1 {
@@ -24,6 +9,7 @@ h1 {
     padding: 15px;
     color: white;
     text-align: center;
+
 }
 
 h2 {
@@ -40,6 +26,7 @@ table {
 
 table td {
     color: #303030;
+    padding: 5px;
 }
 
 table tr:nth-child(even) {
@@ -47,7 +34,7 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background-color: #bdbdbdbd;
+    background-color: #bdbdbd;
 }
 
 table thead th {
@@ -55,9 +42,3 @@ table thead th {
     color: white;
 }
 
-
-
-p {
-    color: #303030;
-    text-align: center;
-}
