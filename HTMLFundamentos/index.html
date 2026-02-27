@@ -12,42 +12,44 @@
 
 <body>
 	<header class="container-fluid p-2 bg-warning text-center">
-	<nav class="navbar navbar-expand-lg bg-warning">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Viagem dos Sonhos</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Pacotes</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Taxas</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Contato
-						</a>
-						<ul class="dropdown-menu dropdown-menu-end">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg bg-warning">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Pacotes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Taxas</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Contato
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-	<h1>Venha realizar a viagem do seus sonhos!</h1>
-	<p>Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
-		explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
-		Prepare-se.</p>
+		</nav>
+		<h1>Venha realizar a viagem do seus sonhos!</h1>
+		<p>Se você é apaixonado por viagens, este é o lugar certo para você! Aqui, vamos
+			explorar os destinos mais incríveis do mundo, desde praias paradisíacas até cidades históricas.
+			Prepare-se.</p>
 	</header>
 
 	<section class="container-fluid bg-light text-center">
@@ -59,7 +61,7 @@
 			até cidades históricas. Prepare-se para se inspirar e planejar a viagem dos seus sonhos.</p>
 		<div class="row">
 			<figure class="col text-center">
-				<img src="Imagens/Capa.jpg"alt="Imagem 1">
+				<img src="Imagens/Capa.jpg" alt="Imagem 1">
 				<figcaption>Viagem 1</figcaption>
 			</figure>
 			<figure class="col text-center">
@@ -67,7 +69,7 @@
 				<figcaption>Viagem 2</figcaption>
 			</figure>
 			<figure class="col text-center">
-				<img src="Imagens/note.jpg"  alt="Imagem 3">
+				<img src="Imagens/note.jpg" alt="Imagem 3">
 				<figcaption>Viagem 3</figcaption>
 			</figure>
 		</div>
@@ -102,69 +104,69 @@
 	</section>
 
 	<section class="container-fluid bg-light">
-		<h2>Contato</h2>
+		<br>
+		<h2 class="text-center">Faça ja seu orçamento</h2>
 		<form action="" method="GET">
 
 			<fieldset>
 				<legend>Dados do cliente</legend>
-				<label>
-					Nome:<br>
-					<input type="text" name="nome"><br><br>
-				</label>
-				<label>
-					Email<br>
-					<input type="email" required name="email" placeholder="email@xyz" required><br><br>
-				</label>
-				
-				<label>
-					Data de ida<br>
-					<input type="date" name="dataIda"><br><br>
-				</label>
-				<label>
-					Data de volta<br>
-					<input type="date" name="datVolta"><br><br>
-				</label>
-				<label>
-					Quantidade de pessoas<br>
-					<input type="number" name="qtdPessoas"><br><br>
-				</label>
-				<label>
-					Comentario<br>
-					<textarea name="comentario" rows="5"></textarea><br><br>
-				</label>
-				<label>
-					Senha:<br>
-					<input type="password" name="senha" pattern="[A-Z]{3}[0-9]{4}" 
-					title="Senha deve conter 3 letras maiúsculas e  4 números"><br><br>
-				</label>
+
+				<div class="mb-3">
+					<label class="form-label" for="nome">
+						Nome:
+					</label>
+					<input type="text" class="form-control" name="nome" id="nome">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" for="email">
+						Email:
+					</label>
+					<input type="email" class="form-control" required name="email" placeholder="email@xyz" required
+						id="email">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" for="dataIda">
+						Data de ida:
+					</label>
+					<input type="date" class="form-control" name="dataIda" id="dataIda">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" for="dataVolta">
+						Data de volta:
+					</label>
+					<input type="date" class="form-control" name="dataVolta" id="dataVolta">
+				</div>
 			</fieldset>
-			<br>
 			<fieldset>
-				<legend>Quais serviços deseja contratar?</legend>
-				<label>
-					<br><input type="checkbox" name="passagens" value="Passagens">Compra Passagens<br>
-				</label>
-				<label>
-					<br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem<br>
-				</label>
-				<label>
-					<br><input type="checkbox" name="aluguelVeiculos" value="Aluguel de veiculos">Aluguel de Veículos<br>
-				</label>
+				<legend>Quais serviços voce deseja contratar?</legend>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="passagens" value="Passagens"
+						id="compraPassagens">
+					<label class="form-check-label" for="compraPassagens">
+						Compra Passagens
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="hospedagem" value="Hospedagem"
+						id="reservaHospedagem">
+					<label class="form-check-label" for="reservaHospedagem">
+						Reserva de Hospedagem
+					</label>
+				</div>
+
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="aluguelVeiculos" value="Aluguel de veiculos"
+						id="aluguelVeiculos">
+					<label class="form-check-label" for="aluguelVeiculos">
+						Aluguel de veiculos
+					</label>
+				</div>
+
 			</fieldset>
-			<br>
-			<fieldset>
-				<legend>Escolha a Forma de pagamento</legend>
-				<label>
-					<br><input type="radio" name="cartaoCredito" value="Cartão de crédito"> Cartão de crédito<br>
-				</label>
-				<label>
-					<br><input type="radio" name="boleto" value="Boleto"> Boleto bancário<br>
-				</label>
-				<label>
-					<br><input type="radio" name="pix" value="Pix"> Pix<br>
-				</label>
-			</fieldset>
-			<br>
 			<fieldset>
 				<legend>Escolha o prazo</legend>
 				<select name="prazo">
@@ -174,10 +176,10 @@
 				</select>
 			</fieldset>
 			<br>
-			<button>Salvar</button>
+			<button class="btn btn-secondary">Salvar</button>
 		</form>
 	</section>
-
+	<br>
 	<footer class="container-fluid bg-warning">
 		<p>&copy; 2024 Viagem dos Sonhos. Todos os direitos reservados.</p>
 	</footer>
